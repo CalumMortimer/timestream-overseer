@@ -2,7 +2,7 @@ import boto3
 
 
 class CheckResource:
-    query = """select * from {0}.{1} where time between ago(5m) and now() limit 1 """
+    query = """select * from {0}.{1} where time between ago(10m) and now() limit 1 """
     client = boto3.client('timestream-query')
 
     def __init__(self, database, table):
