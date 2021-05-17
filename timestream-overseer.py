@@ -31,7 +31,7 @@ if __name__ == '__main__':
     counter = 287
     while True:
         for resource in resources:
-            checkResource = CheckResource(resource[0], resource[1])
+            checkResource = CheckResource(resource[0], resource[1], resource[2])
             results = checkResource.getResults()
             if results[0] == 1:
                 break
