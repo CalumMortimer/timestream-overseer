@@ -12,7 +12,7 @@ resources = os.getenv("RESOURCES").split(";")
 # get the email list from .env file
 interestedParties = os.getenv("INTERESTED_PARTIES").split(",")
 # get the admin email
-veryInterestedParty = os.getenv("VERY_INTERESTED_PARTY")
+veryInterestedParty = os.getenv("VERY_INTERESTED_PARTY").split(",")
 # get gmail credentials
 gmail_user = os.getenv("GMAIL_USERNAME")
 gmail_password = os.getenv("GMAIL_PASSWORD")
