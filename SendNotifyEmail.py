@@ -12,7 +12,7 @@ class SendNotifyEmail:
         try:
             email_text = "\r\n".join([
                 ("From: " + self.gmail_user),
-                ("To: " + self.to_address),
+                ("To: " + ",".join(self.to_address),
                 "Subject: NOTIFY - Timestream error checking in progress",
                 "",
                 "This is a daily confirmation notice that the Timestream Overseer continues to check for errors"
